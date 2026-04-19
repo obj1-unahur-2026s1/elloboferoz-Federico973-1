@@ -7,6 +7,12 @@ object feroz {
     peso += unaComida.peso() / 10
     unaComida.esComida()
   }
+  method estaSaludable() {
+    peso = peso > 20 and peso < 150
+  }
+  method noEstaSaludable() {
+    peso = peso < 20 and peso  150
+  }
   method crisis(cape,abue) {
     peso = 10
     cape.esSalvada()
